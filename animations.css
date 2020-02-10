@@ -1,10 +1,87 @@
+body{
+    font-family: itc-american-typewriter,serif;
+    font-weight: 500;
+    font-style: normal;
+    color: #FBF3DD;
+    text-align: center;
+    font-size: 28px;
+}
+
+h1{
+    font-size: 60px;
+    text-align: center;
+    font-family: almaq-rough, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+h3{
+    font-family: itc-american-typewriter,serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 22px;
+    margin-top: 80px;
+    margin-bottom: 0px;
+
+}
+h2{
+    font-family: itc-american-typewriter,serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 22px;
+    margin-bottom: 80px;
+
+}
+.tile{
+    min-height: 18rem;
+}
+.greenback{
+    background-color: #2aad71;
+}
+i{
+    color: #2aad71;
+    margin: 20px;
+}
+
+
+a div{
+    text-decoration: none;
+    color: #FBF3DD;
+}
+a:hover{
+    text-decoration: none;
+}
+.getres:hover{
+    box-shadow: 5px;
+}
+
+.btn-primary,
+.btn-primary:hover,
+.btn-primary:active,
+.btn-primary:visited,
+.btn-primary:focus {
+background-color: #2aad71 !important;
+border-color: #2aad71 !important;
+}
+p{
+font-family: interstate-mono, monospace;
+font-weight: 400;
+font-style: normal;
+font-size: 16px;
+
+}
+.plist{
+margin-top: 28px;
+}
+li{
+font-size: 20px;
+}
 @keyframes jump{
     0%{transform: rotate(0deg) translateY(0px);}
     33%{transform: rotate(15deg) translateY(-3px);}
     66%{transform: rotate(-15deg) translateY(-3px);}
     100%{transform: rotate(0deg) translateY(0px);}
 }
-i:hover{
+.iconjump{
     color: #FBF3DD;
     animation-name: jump;
     animation-duration: 1.5s;
