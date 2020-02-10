@@ -1,0 +1,11 @@
+@keyframes jump{
+    0%{transform: rotate(0deg) translateY(0px);}
+    33%{transform: rotate(15deg) translateY(-3px);}
+    66%{transform: rotate(-15deg) translateY(-3px);}
+    100%{transform: rotate(0deg) translateY(0px);}
+}
+i:hover{
+    color: #FBF3DD;
+    animation-name: jump;
+    animation-duration: 1.5s;
+}
