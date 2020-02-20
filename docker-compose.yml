@@ -1,0 +1,8 @@
+version: '2'
+
+services: 
+  porfolio:
+    image: logandee/portfolio
+    build: .
+    ports: 
+      - '80:80'
