@@ -17,30 +17,84 @@
                 <li class="nav-item"><a class="link" href="https://github.com/logandee"><i class="icon fab fa-github"></i></a></li>
                 <li class="nav-item"><a class="link" href="https://www.linkedin.com/in/logandhenderson/"><i class="icon fab fa-linkedin-in"></i></a></li>
                 <li class="nav-item"><a class="link" href="mailto: logandeehenderson@gmail.com"><i class="icon far fa-envelope"></i></a></li>
+                <!-- <li class="nav-item"><a class="link" href="#"><i class="icon fab fa-docker"></i></a></li> -->
             </ul>
             <a href="resume.pdf" target="_blank" class="getres btn btn-primary">R&#233;sum&#233;</a>
         </div>
+        <!-- <a href="#projects">projects</a> -->
         <h3 class="intro">Hello! my name is</h3>
         <h1 class="intro">Logan Henderson</h1>
         <h2 class="intro">and here is some stuff that I've worked on.</h2>
         <div class="row">
-            <a class="rounded-lg col-md" href="#"><div class="nogreenback tile rounded-lg col-md">About Me
-                <p>I'm a software engineer looking for a role as a contributor on a sofeware development team. My skills include full-stack development on multiple frameworks. I enjoy collaborating with others and am motivated by the thrill of solving complex problems.</p>
+            <div class="nogreenback shadow-lg tile rounded-lg col-12">About Me
+                <p>I'm a software engineer looking for a role as a contributor on a sofeware development team. My skills include full-stack development on multiple frameworks and using Docker containers for development and deployment. I enjoy collaborating with others and I am motivated by the thrill of solving complex problems.</p>
                 <!-- <p>My love for tech is what got me to this point, but that's not where I started. Click here to learn more about me...</p> -->
-            </div></a>
-            <a class="rounded-lg col-md" href="/Projects"><div class="tile greenback rounded-lg col-md">Projects
-                <div class="plist">
+            </div>
+            <div id="projects" class="tile shadow-lg greenback rounded-lg col-12">Projects
+                <div class="card-group">
 
-                <ul>
-                    <li>ThinkSaucer</li>
-                    <li>Rover</li>
-                    <li>Tree Money</li>
-                    <li>Avem</li>
-                    <li>Inventory Manager</li>
-                </ul>
-                <p>Click here to see more details...</p>
+                    <div class="card">
+                        <a href="https://github.com/logandee/ThinkSaucer">    
+                            <div class="card-body">
+                                <h5 class="card-title">ThinkSaucer</h5>
+                                <p class="card-text">A message board for brainstorming ideas. A full-stack .NET core MVC application with MySQL database. Uses Entity Framework to
+                                    preform CRUD operations.</p>
+                            </div>
+                            <div class="card-body">
+                                <img src="./img/c-sharp.png" alt="dotnet">
+                                <img src="./img/mysql.png" alt="mysql">
+                                <img src="./img/HTML.png" alt="html">
+                                <img src="./img/CSS.png" alt="CSS">
+                                <img src="./img/bootstrap.png" alt="bootstrap">
+                            </div>
+                        </a>
+                    </div>
+                    <div class="card">
+                        <a href="https://github.com/logandee/tree_money">    
+                            <div class="card-body">
+                                <h5 class="card-title">Tree Money</h5>
+                                <p class="card-text">A single page application for getting equity information from
+                                    Yahoo Finance API using Python/Django framework, AJAX, Chart.js for data visualization.</p>
+                            </div>
+                            <div class="card-body">
+                                <img src="./img/python.png" alt="python">
+                                <img src="./img/mysql.png" alt="mysql">
+                                <img src="./img/ajax.png" alt="AJAX">
+                                <img src="./img/HTML.png" alt="html">
+                                <img src="./img/CSS.png" alt="CSS">
+                            </div>
+                        </a>
+                    </div>
+                    <div class="card">
+                        <a href="https://github.com/logandee/Rover">    
+                            <div class="card-body">
+                                <h5 class="card-title">Rover</h5>
+                                <p class="card-text">A rogue-like dungeon crawler with procedurally generated rooms and enemy path finding. Built using C# in Unity Game Engine.</p>
+                            </div>
+                            <div class="card-body">
+                                <img src="./img/unity.png" alt="Unity">
+                                <img src="./img/Visual_Studio.png" alt="Visual Studio">
+                            </div>
+                        </a>
+                    </div>
+                    <div class="card">
+                        <a href="https://github.com/logandee/CommerceManager">    
+                            <div class="card-body">
+                                <h5 class="card-title">Commerce Manager</h5>
+                                <p class="card-text">A full-stack MEAN application for managing product inventory. Connected to a MongoDB using Node.js API. Uses fron-end and back-end validations</p>
+                            </div>
+                            <div class="card-body">
+                                <img src="./img/mongodb.png" alt="MongoDB">
+                                <img src="./img/angular.png" alt="Angular">
+                                <img src="./img/nodejs.png" alt="Node">
+                                <img src="./img/JavaScript.png" alt="JavaScript">
+                                <img src="./img/HTML.png" alt="html">
+                            </div>
+                        </a>
+                    </div>
                 </div>
-            </div></a>
+
+            </div>
             <div class="w-100"></div>
         </div>
     </div>
@@ -48,16 +102,16 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 <script>
-    $(document).ready(function() {
-        $(".tile").hover(
-            function() {
-                    $(this).addClass('shadow-lg'); 
-            }, function() {
-                    $(this).removeClass('shadow-lg');
-            }
-            );
-    }
-    )
+    // $(document).ready(function() {
+    //     $(".tile").hover(
+    //         function() {
+    //                 $(this).addClass('shadow-lg'); 
+    //         }, function() {
+    //                 $(this).removeClass('shadow-lg');
+    //         }
+    //         );
+    // }
+    // )
         $(document).ready(function() {
         $(".getres").hover(
             function() {
